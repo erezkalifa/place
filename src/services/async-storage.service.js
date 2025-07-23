@@ -54,7 +54,6 @@ async function remove(entityType, entityId, delay = 0) {
   return true;
 }
 
-// ---------- privates ----------
 function _load(key) {
   return JSON.parse(localStorage.getItem(key)) || [];
 }

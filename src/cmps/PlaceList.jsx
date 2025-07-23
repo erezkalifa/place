@@ -9,7 +9,6 @@ export function PlaceList({ places }) {
             <th>Name</th>
             <th>Type</th>
             <th>Address</th>
-            {/* <th>Actions</th> אם צריך */}
           </tr>
         </thead>
         <tbody>

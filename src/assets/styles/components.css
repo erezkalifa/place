@@ -1,6 +1,5 @@
 .table-wrapper {
   overflow-x: auto;
-  /* כדי לא לשבור בלייאאוט במסכים קטנים */
 }
 
 .place-table {
@@ -34,6 +33,5 @@
 
 .place-table td:last-child,
 .place-table th:last-child {
-  /* אם יש טור אקשנים, שמור על רוחב מינימלי */
   white-space: nowrap;
 }
