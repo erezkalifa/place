@@ -1,0 +1,102 @@
+:root {
+  --clr-bg: #f7f8fa;
+  --clr-surface: #fff;
+  --clr-text: #222;
+  --clr-text-muted: #666;
+  --clr-primary: #1976d2;
+  --clr-primary-light: rgba(25, 118, 210, 0.15);
+  --clr-border: #dcdcdc;
+
+  --radius: 6px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 20px;
+  --fs-base: 16px;
+  --fs-sm: 0.9rem;
+  --fs-lg: 1.4rem;
+}
+
+body {
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: system-ui, sans-serif;
+}
+
+/* Wrapper */
+.place-create {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--clr-surface);
+  padding: var(--space-lg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.place-create h2 {
+  margin-bottom: var(--space-md);
+  font-size: var(--fs-lg);
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-row label {
+  font-size: var(--fs-sm);
+  color: var(--clr-text-muted);
+}
+
+.form-row input,
+.form-row select {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  background: #fff;
+  width: 100%;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+  outline: none;
+  border-color: var(--clr-primary);
+  box-shadow: 0 0 0 2px var(--clr-primary-light);
+}
+
+/* Actions */
+.form-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+button {
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  background: var(--clr-primary);
+  color: #fff;
+  font-size: var(--fs-sm);
+  transition: opacity 0.15s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background: #e0e0e0;
+  color: #333;
+}

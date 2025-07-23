@@ -1,0 +1,41 @@
+/* base.css */
+:root {
+  --clr-bg: #f5f6f8;
+  --clr-surface: #ffffff;
+  --clr-text: #222;
+  --clr-text-light: #666;
+  --clr-primary: #3b82f6;
+  --clr-primary-hover: #2563eb;
+  --clr-accent: #10b981;
+  --clr-danger: #ef4444;
+  --radius: 10px;
+  --spacing: 12px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --font: "Rubik", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--clr-text);
+  background: var(--clr-bg);
+  line-height: 1.5;
+}
+a {
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
